@@ -1,49 +1,11 @@
-.question {
-    margin-bottom: 20px;
-}
-.button {
-    background: rgb(248, 248, 248);
-    height: 50px;
-    width: 60%;
-    color: black;
-    font-size: 40px;
-    text-align: left;
-    padding-left: 30px;
-    border: 0px;
-    
-}
-
-.button:hover {
-    background: rgb(206, 200, 200);
-}
-.menu {
-    background: rgb(248, 248, 248);
-    height: 50px;
-    margin-left: 20%;
-    margin-right: 20%;
-    border-top: solid 1px rgb(248, 248, 248);
-    text-align: left;
-    padding-left: 30px;
-}
-
-///
-
 *{
     box-sizing: border-box;
   }
   
-  /* body {
-  font-family: 'Montserrat', sans-serif;
-  background:  #292b31;
-  color: #dddddd;}
-  
-  h1 {margin-top: 100px; text-align: center;
-  } */
-  
-  
+
   .dropdown {
     position: relative;
-    top: 50px;
+    top: 10px;
     margin: 0 auto;
     width: 60%;
     background: #eaedee;
@@ -54,7 +16,7 @@
    color: rgb(0, 0, 0);
    padding: 10px 16px;
    cursor: pointer;
-   height: 30px;
+   height: 55px;
    text-align: left;
    font-size: 25px;
   }
@@ -70,7 +32,7 @@
     border: solid rgb(5, 0, 0);
     border-width: 0 1px 1px 0;
     float: right;
-    margin-top: 8px;
+    margin-top: 16px;
     margin-right: 6px;
     padding: 5px;
     transform: rotate(-135deg);
@@ -104,10 +66,7 @@
     padding-top: 12px;
     max-height: 290px;
     opacity: 1;
-    transition: max-height 0.7s, opacity 3s, visibility 4s ease;
-  
-  
-  
+    transition: max-height 0.4s, opacity 1s, visibility 2s ease;  
   }
   
   .dropdown__item {
@@ -119,8 +78,6 @@
     border-bottom: 1px solid #666;
   
   }
-  
-  
   
   .dropdown__item:hover {
   color: white;

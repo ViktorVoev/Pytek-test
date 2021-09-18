@@ -9,27 +9,40 @@ class Question extends React.Component {
       this.state = {
         isOpen: false
       }
+
+      this.openClick = this.openClick.bind(this);
+      this.closeClick = this.closeClick.bind(this);
     }
   
-    handleClick = () => {
-        this.setState({
-          isOpen: !this.state.isOpen
-        });
+      openClick(event) {
+        event.preventDefault();
+
+        this.setState({ isOpen: true }, () => {
+          document.addEventListener('click', this.closeClick, true)
+        })
+      }
+
+      closeClick() {
+        this.setState({ isOpen: false }, () => {
+          document.removeEventListener('click', this.closeClick, true)
+        })
       }
     
 
     render() {
-      const {isOpen} = this.state;
+      const { isOpen } = this.state;
   
       return (
+        <React.StrictMode>
         <div
           className={isOpen ? "dropdown active" : "dropdown"}
-          onClick={this.handleClick} >
+          onClick={this.openClick} >
           <div className="dropdown__text">
-            {this.props.children}
+            {this.props.question}
           </div>
-          <div className="dropdown__items">{this.props.answer}</div>
+          <div className="dropdown__items">{this.props.children}</div>
         </div>
+        </React.StrictMode>
       )
     }
   

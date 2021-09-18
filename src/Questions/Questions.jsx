@@ -12,12 +12,21 @@ class Questions extends Component {
     }
    render() {
     return (
+        <React.StrictMode>
         <div>
         <p>Hello! Didn't find what you are looking for?Please contact us.</p>
-        <Question answer='Lorem ipsum Lorem Lorem ipsum Lorem ipsum'>Question number 0</Question>
-        <Question answer='Lorem ipsum Lorem Lorem ipsum Lorem ipsum'>Question number 1</Question>
-        <Question answer='Lorem ipsum Lorem Lorem ipsum Lorem ipsum'>Question number 2</Question>
-    </div>
+        <Question question='Question number 0'>Lorem ipsum Lorem Lorem ipsum Lorem ipsum</Question>
+        <Question question='Question number 1'>Lorem ipsum Lorem Lorem ipsum Lorem ipsum</Question>
+        <Question question='Question number 2'>Lorem ipsum Lorem Lorem ipsum Lorem ipsum</Question>
+        <Question question='Question number 3'>Lorem ipsum Lorem Lorem ipsum Lorem ipsum</Question>
+        <Question question='Question number 4'>Lorem ipsum Lorem Lorem ipsum Lorem ipsum</Question>
+        <Question question='Question number 5'>Lorem ipsum Lorem Lorem ipsum Lorem ipsum</Question>
+        <Question question='Question number 6'>Lorem ipsum Lorem Lorem ipsum Lorem ipsum</Question>
+        <Question question='Question number 7'>Lorem ipsum Lorem Lorem ipsum Lorem ipsum</Question>
+        <Question question='Question number 8'>Lorem ipsum Lorem Lorem ipsum Lorem ipsum</Question>
+        <Question question='Question number 9'>Lorem ipsum Lorem Lorem ipsum Lorem ipsum</Question>
+        </div>
+        </React.StrictMode>
     )
    }
 }
