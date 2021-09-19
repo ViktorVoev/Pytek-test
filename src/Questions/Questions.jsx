@@ -6,10 +6,12 @@ class Questions extends Component {
     constructor(props){
         super(props);
 
-        this.state = {
-            question: ''
-        }
+     this.state = {
+        
+     }   
+    
     }
+
    render() {
     return (
         <React.StrictMode>

@@ -19,14 +19,14 @@ class Question extends React.Component {
 
         this.setState({ isOpen: true }, () => {
           document.addEventListener('click', this.closeClick, true)
-        })
-      }
+        });
+      };
 
       closeClick() {
         this.setState({ isOpen: false }, () => {
           document.removeEventListener('click', this.closeClick, true)
-        })
-      }
+        });
+      };
     
 
     render() {
