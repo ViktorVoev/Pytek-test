@@ -1,12 +1,12 @@
 import React from 'react';
 import './App.css';
-import Footer from './Footer/Footer';
+import Header from './Header/Header';
 import Questions from './Questions/Questions';
 
 function App() {
   return (
     <div className="App">
-      <Footer />
+      <Header />
       <React.StrictMode>
       <Questions />
       </React.StrictMode>
